@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+  Header set X-Frame-Options SAMEORIGIN
+  Header append X-Frame-Options "ALLOW-FROM http://agencio.skytouchinfotech.com/"
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>

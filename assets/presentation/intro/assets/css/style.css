@@ -1,0 +1,275 @@
+/* ------------------------------------------------
+  Project:   Agencio - Creative Agency And Portfolio HTML5 Template
+  Author:    ThemeHt
+------------------------------------------------ */
+/* ------------------------
+    Table of Contents
+
+  1. General
+  2. Typography
+  3. Helper class
+  4. Text color
+  5. Background color
+  6. Button
+  7. Title
+  8. Transform Y
+  9. Banner
+  10. Demo
+  11. Featured Box
+  12. Scroll to Top
+
+
+ 
+/* ------------------------
+    General
+------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+body {font-family: 'Roboto', sans-serif; font-weight: normal; font-style: normal; font-size: 1rem; line-height: 1.5; color: #989898; overflow-x: hidden;}
+
+a, .btn, img, span, .featured-item{ -webkit-transition: all 0.4s ease-in-out 0s; -moz-transition: all 0.4s ease-in-out 0s; -ms-transition: all 0.4s ease-in-out 0s; -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s; }
+a:focus { text-decoration: none !important; }
+a:focus, a:hover { color: #0083ff; text-decoration: none !important; }
+a, button, input { outline: medium none !important; color: #0083ff; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 { font-family: 'Josefin Sans'; margin-top: 0px; margin-bottom: 0px;}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
+h1, .h1 { font-size: 4.375rem; font-style: normal; line-height: 5rem; text-transform: capitalize; color: #0a1245; font-weight: 700;}
+h2, .h2 { font-size: 3.125rem; font-style: normal; line-height: 3.200rem; font-weight: 700; color: #0a1245; text-transform: capitalize; margin-bottom: 10px; position: relative; }
+h3, .h3 { font-size: 2.125rem; font-style: normal; line-height: 2.75rem; font-weight: 700; color: #0a1245; }
+h4, .h4 { font-size: 1.75rem; font-style: normal; line-height: 2.375rem; font-weight: 600; margin-bottom: 10px; color: #0a1245; }
+h5, .h5 { font-size: 1.5rem; font-style: normal; line-height: 2.125rem; font-weight: 600; margin-bottom: 10px; color: #0a1245; }
+h6, .h6 { font-size: 1.25rem; font-style: normal; line-height: 1.75rem; font-weight: 600; margin-bottom: 10px; color: #0a1245; }
+ul { margin: 0px; padding: 0px; }
+u {text-decoration-style: wavy;}
+
+*::-moz-selection { background: #0083ff; color: #fff; text-shadow: none; }
+::-moz-selection { background: #0083ff; color: #fff; text-shadow: none; }
+::selection { background: #0083ff; color: #fff; text-shadow: none; }
+
+/* ------------------------
+    Helper class
+------------------------*/
+.lead{font-weight: normal; font-size: 16px; line-height: 30px;}
+.pos-r{position: relative;}
+section{padding: 80px 0;}
+.section-title{margin-bottom: 50px;}
+p { color: #8090b5; line-height: 1.7; }
+.lead { font-size: 1.25rem; font-weight: 300; }
+.text-dark{color: #0a1245 !important;}
+.text-primary {color: #0083ff !important;}
+.text-muted { color: rgb(140, 152, 164) !important }
+
+/* ------------------------
+    Text color
+------------------------*/
+.text-theme{color:#0083ff;}
+.text-white{color:#ffffff;}
+.text-black{color:#0a1245;}
+.text-grey{color:#aaaaaa;}
+
+/* ------------------------
+    Bg color
+------------------------*/
+.white-bg{background:#ffffff;}
+.dark-bg{background:#12141d;}
+.grey-bg{background:#e1fdf5;}
+.theme-bg{background: #0083ff;}
+
+/* ------------------------
+Button
+------------------------*/
+.btn { font-weight: 500; padding: 0.75rem 1rem; border-radius: 0;}
+.btn-primary { color: #fff; background-color: #0083ff; border-color: #0083ff; }
+.btn-primary:hover, .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle { color: #fff; background-color: #00f2aa; border-color: #00f2aa; }
+.btn.focus, .btn:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-outline-primary.dropdown-toggle:focus { box-shadow: none; }
+button:focus { outline: none; }
+
+
+/* ------------------------
+    Transform Y
+------------------------*/
+.transform-y, .align-center{transform: translateY(-50%); -webkit-transform: translateY(-50%); -o-transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%);}
+
+
+/* ------------------------
+    Banner
+------------------------*/
+.fullscreen-banner{min-height: 800px}
+.align-center{position: absolute; top: 50%; width: 100%; z-index: 9;}
+.banner-bg {position: absolute; bottom: 0; left: 0; width: 100%;}
+.logo img{height: 130px;}
+
+
+/* ------------------------
+    Demo
+------------------------*/
+.home-img {background: #ffffff; padding-top: 50px; overflow: hidden; position: relative; -webkit-box-shadow:  0 .125rem .25rem rgba(0, 0, 0, .075); -moz-box-shadow:  0 .125rem .25rem rgba(0, 0, 0, .075); box-shadow:  0 .125rem .25rem rgba(0, 0, 0, .075);}
+.home-demo .home-img {position: relative; border-radius: 0.25rem; overflow: hidden;}
+.home-title{background: #ffffff; padding: 20px; text-align: center;}
+.home-title a{padding:15px 20px; display: inline-block; background: rgba(19, 96, 239, 0.05); border-radius: .25rem}
+.home-title a:hover{background: rgba(19, 96, 239, 1); color: #ffffff}
+.home-img a img{box-shadow: 0 10px 55px 5px rgba(137, 173, 255, .10) !important;}
+.box-loader {border-radius: 100%; margin: 0 auto; position: absolute; top: 15px; left: 15px;}
+.box-loader span{display: inline-block; width: 10px; height: 10px; border-radius: 100%; background: #0083ff; margin: 0 5px; opacity: 0;}
+.box-loader span:nth-child(1){animation: opacitychange 1s ease-in-out infinite;}
+.box-loader span:nth-child(2){animation: opacitychange 1s ease-in-out 0.33s infinite; background: #00f2aa;}
+.box-loader span:nth-child(3){animation: opacitychange 1s ease-in-out 0.66s infinite; background: #12141d;}
+
+.new-lable {position: absolute; top: 10px; right: 15px;}
+
+
+/* ------------------------
+    Featured Box
+------------------------*/
+.featured-item{display: flex;
+align-items: center; background: #ffffff; padding: 20px; -webkit-box-shadow:  0 .125rem .25rem rgba(0, 0, 0, .075); -moz-box-shadow:  0 .125rem .25rem rgba(0, 0, 0, .075); box-shadow:  0 .125rem .25rem rgba(0, 0, 0, .075);}
+.featured-item .featured-icon {margin-right: 10px; line-height: 0;}
+
+
+/* ------------------------
+    Scroll to Top
+------------------------*/
+.scroll-top {position: fixed; bottom: 30px; right: 30px; z-index: 600; opacity: 0; visibility: hidden; -webkit-transition: all 0.8s ease-in-out; transition: all 0.8s ease-in-out; -webkit-transform: translate3d(0, 200%, 0); -ms-transform: translate3d(0, 200%, 0); transform: translate3d(0, 200%, 0);}
+.scroll-top a, .scroll-top a:visited {display: block; height: 60px; width: 60px; line-height: 60px; text-align: center; border-radius: 7px; -webkit-box-shadow: 0 0 15px 6px rgba(0,0,0,0.1); -moz-box-shadow: 0 0 15px 6px rgba(0,0,0,0.1); box-shadow: 0 0 15px 6px rgba(0,0,0,0.1); -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.scroll-top.scroll-visible {opacity: 1; visibility: visible; -webkit-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);}
+
+
+
+/* ------------------------
+    Responsive
+------------------------*/
+
+@media (max-width: 992px){
+.md-mt-5{margin-top: 50px;}
+.banner-bg{display: none;}
+.fullscreen-banner { min-height: inherit;}
+}
+
+@media (max-width: 767px){
+h1{font-size: 32px; line-height: 40px;}
+h2{font-size: 30px; line-height: 40px;}
+h3 {font-size: 22px; line-height: 30px;}
+.btn {font-size: 13px; padding: 10px 20px;}
+.sm-mt-5{margin-top: 50px;}
+.logo {font-size: 2rem; line-height: 2rem;}
+
+}
+
+
+@media (max-width: 576px){
+.col-xs-6{width: 50%;}
+.xs-mt-3{margin-top: 30px !important}
+.xs-mt-0{margin-top: 0 !important}
+h2 {font-size: 24px; line-height: 30px;}
+
+.home-title a {
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+h5, .h5 {
+    font-size: 1.1rem;
+    line-height: 1.50rem;
+}
+
+}
+
+/*--opacitychange--*/
+
+@keyframes opacitychange{
+  0%, 100%{
+    opacity: 0;
+  }
+
+  60%{
+    opacity: 1;
+  }
+}
+
+
+/* ------------------------
+    Josefin Font
+------------------------*/
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-Italic.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/JosefinSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-LightItalic.woff2') format('woff2'),
+        url('../fonts/JosefinSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-Regular.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/JosefinSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-Thin.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-ThinItalic.woff2') format('woff2'),
+        url('../fonts/JosefinSans-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/JosefinSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-Bold.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans-Light.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
